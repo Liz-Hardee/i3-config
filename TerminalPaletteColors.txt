@@ -1,0 +1,19 @@
+# The following is a list of color values for my bash terminal
+# Read from left to right, top to bottom
+
+#002B36
+#D15F5F
+#AFAF00
+#F8AF00
+#87AE8B
+#D33682
+#87AFAF
+#EEE8D5
+#6FAF87
+#E26B14
+#718A8A
+#657B83
+#839496
+#6C71C4
+#93A1A1
+#FDF6E3
