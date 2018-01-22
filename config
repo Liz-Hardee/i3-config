@@ -24,8 +24,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# Start Rofi with some custom settings
+bindsym $mod+d exec rofi -show run -font "SpaceMono 40" -fullscreen -padding 700 -bg "#3A3A3A" -fg "#ffffff" -hlbg "#E26B14" -hlfg "#ffffff" -hide-scrollbar -separator-style "none"
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -179,9 +180,9 @@ bar {
 #Custom settings
 
 # Set hiDPI
-exec xrandr --dpi 200
+exec_always xrandr --dpi 200
 # Sets backgroud color
-exec xsetroot -solid "#3A3A3A"
+exec_always hsetroot -solid "#3A3A3A"
 # Sets the window border size
 for_window [class="^.*"] border pixel 4
 
@@ -190,7 +191,7 @@ client.focused #ffffff #ffffff #ffffff #ffffff #ffffff
 client.focused_inactive #858585 #858585 #858585 #858585 #858585 
 client.unfocused #858585 #858585 #858585 #858585 #858585 
 
-gap_size 15
+gap_size 10
 
-
+exec_always compton -f
 
